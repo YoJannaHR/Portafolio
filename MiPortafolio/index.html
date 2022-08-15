@@ -48,20 +48,17 @@
 
       <div class="dos"></div>
 
-      <!-- <div class="tres">
-            <h4> Mis</h4>
-            <h3>Proyectos</h3>
-        </div> -->
-
       <img id="foto" src="./assest/imagenes/dani.png" alt="" />
-   
     </section>
 
     <section class="rectangulo1">
-  
       <div class="rectangulo">
         <!-- <h3>Estudios Realizados</h3> -->
         <img id="google" src="./assest/Logos- Imágenes/logo_sena.jpg" alt="" />
+      <!-- <div class="estudios"> 
+        <h5>Tecnologo En Analisis y desarrollo de la informacion</h1>
+         
+      </div> -->
         <img
           id="amazon"
           src="./assest/Logos- Imágenes/logo_academlo 2.png"
@@ -84,12 +81,17 @@
         sistema de información, en diferentes leguajes de programación. Egresada
         de Academlo, programador Web Full-Stack.
       </p>
+      <a
+      href="./assets/documents/Criterios de evaluacion módulo de fundamentos.pdf"
+      download
+      class="btn-download"
+      >Descargar CV</a>
     </article>
+  
     <aside class="aside1">
       <h3>Servicios</h3>
-      <div class="servicios"> 
-       
-        <div class="servicio1 ">
+      <div class="servicios">
+        <div class="servicio1">
           <!--  -->
           <i id="serv1">
             <img src="./assest/íconos/iconoir_design-pencil.svg" alt=""
@@ -114,7 +116,6 @@
           <h5>Desarrollo</h5>
           <h6>Desarrollo de sistema de información.</h6>
         </div>
-
       </div>
     </aside>
     <aside id="menu2" class="aside2">
@@ -124,48 +125,82 @@
         <h4 class="porcentaje1">60%</h4>
         <div class="progress-bar1" style="--width: 60" data-label=""></div>
         <h4 class="habilidad2">HTML</h4>
-        <h4 class="porcentaje2">70%</h4>
-        <div class="progress-bar2" style="--width: 70" data-label=""></div>
+        <h4 class="porcentaje2">80%</h4>
+        <div class="progress-bar2" style="--width: 80" data-label=""></div>
         <h4 class="habilidad3">CSS</h4>
-        <h4 class="porcentaje3">50%</h4>
-        <div class="progress-bar3" style="--width: 50" data-label=""></div>
+        <h4 class="porcentaje3">80%</h4>
+        <div class="progress-bar3" style="--width: 80" data-label=""></div>
         <h4 class="habilidad4">Bootstrap</h4>
         <h4 class="porcentaje4">70%</h4>
         <div class="progress-bar4" style="--width: 70" data-label=""></div>
         <h4 class="habilidad5">PHP</h4>
-        <h4 class="porcentaje5">50%</h4>
-        <div class="progress-bar5" style="--width: 50" data-label=""></div>
+        <h4 class="porcentaje5">60%</h4>
+        <div class="progress-bar5" style="--width: 60" data-label=""></div>
+        <h4 class="habilidad6">React</h4>
+        <h4 class="porcentaje6">60%</h4>
+        <div class="progress-bar6" style="--width: 60" data-label=""></div>
       </div>
     </aside>
     <aside id="menu3" class="aside3">
       <h3>Mis proyectos</h3>
-
       <div class="slider">
-        <ul>
-          <li>
-            <img
-              id="experiencia1"
-              src="./assest/Logos- Imágenes/Posso1.png"
-              alt=""
-            />
-          </li>
+        <div class="slider-slides">
+          <div class="slider-slide active">
+            <a href="https://cosmetria.000webhostapp.com/" target="_blank"
+              ><img
+                clas="img-slide"
+                src="./assest/Logos- Imágenes/cosmetria.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="slider-slide">
+            <a href="">
+              <img
+                clas="img-slide"
+                src="./assest/Logos- Imágenes/cosmetria2.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="slider-slide">
+            <a href=""
+              ><img
+                clas="img-slide"
+                src="./assest/Logos- Imágenes/cosmetria3.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="slider-slide">
+            <a href="https://neon-pothos-8fae9b.netlify.app/"
+              ><img
+                clas="img-slide"
+                src="./assest/Logos- Imágenes/Posso1.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="slider-slide">
+            <a href=""
+              ><img
+                clas="img-slide"
+                src="./assest/Logos- Imágenes/Posso2.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="slider-slide">
+            <a href="">
+              <img
+                clas="img-slide"
+                src="./assest/Logos- Imágenes/posso3.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
 
-          <li>
-            <img
-              id="experiencia2"
-              src="./assest/Logos- Imágenes/cosmetria.png"
-              alt=""
-            />
-          </li>
-
-          <li>
-            <img
-              id="experiencia3"
-              src="./assest/Logos- Imágenes/cosmetria3.png"
-              alt=""
-            />
-          </li>
-        </ul>
+        <div class="slider-btns">
+          <a onclick="slider()" class="btns prev" href="#">&laquo;</a>
+          <a onclick="slider()" class="btns next" href="#">&raquo;</a>
+          <!-- <button  onclick=(slider()) class="btns prev" >&laquo;</button>
+          <button onclick=(slider()) class="btns next">&raquo;</button> -->
+        </div>
       </div>
     </aside>
 
@@ -189,5 +224,7 @@
       <img src="./assest/íconos/My project.png" alt="" style="width: 100px" />
       <h6>© Daniela Hernández Ramírez 2021-2022</h6>
     </footer>
+
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>
